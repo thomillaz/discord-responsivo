@@ -5,9 +5,7 @@ Recriar a página inicial do Discord responsivo.
 
 ##Resultado:
 
-<div align="center">
-![desktop](/assets/img/desktop.png)
-![mobile](/assets/img/mobile.png)
+<div style='display: flex;'>
+    <img width='66.9%' src='/assets/img/desktop.png'>
+    <img width='23.2%' src='/assets/img/mobile.png'>
 </div>
-
-|[desktop](/assets/img/desktop.png)|[mobile](/assets/img/mobile.png)|
