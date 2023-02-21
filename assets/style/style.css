@@ -1,0 +1,203 @@
+/* ----------------------------------------
+----- ABOUT -------------------------------
+-------------------------------------------
+----- Página Discord Responsiva -----------
+----- Projeto DIO Trilha CSS --------------
+----- Develoepd by Milla Thomaz, @thomillaz
+---------------------------------------- */
+/* ----- SETTINGS ---------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800');
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+}
+h1, h3{
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: 400;
+    font-size: 56px;
+}
+h2{
+    font-size: 40px;
+    font-weight: 800;
+}
+/* ----- HEADER ------------------------ */
+header{
+    background: url('/assets/img/Header\ Background.png');
+    background-size: cover;
+    width: 100%;
+    height: 490px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header h1{
+    color: #fff;
+    width: 313px;
+    height: 150px;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+}
+header p{
+    text-align: center;
+    width: 767px;
+    color: #fff;
+    margin: 0 10px;
+}
+header .botoes{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: end;
+}
+header button{
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px;
+}
+header #download{
+    width: 205px;
+    height: 44px;
+    background-color: #fff;
+}
+header #open{
+    width: 281px;
+    height: 44px;
+    background-color: #23272A;
+    color: #fff;
+}
+/* ----- PRIMEIRA ---------------------- */
+.primeira,
+.segunda,
+.terceira{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    position: relative;
+}
+.primeira #img-section-um{
+    width: 607px;
+    align-self: center;
+}
+.primeira #section-um,
+.segunda #section-dois,
+.terceira #section-tres{
+    width: 350px;
+    padding: 10px;
+}
+.primeira #section-um h2{
+    padding: 5px;
+}
+/* ----- SEGUNDA ----------------------- */
+.segunda{
+    background-color: #F6F6F6;
+}
+.segunda #img-section-dois{
+    width: 600px;
+}
+/* ----- TERCEIRA ---------------------- */
+.terceira #img-section-tres{
+    width: 605px;
+}
+/* ----- QUARTA ------------------------ */
+.quarta{
+    height: 745px;
+    width: 100%;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.quarta h3{
+    width: 650px;
+}
+.quarta p{
+    width: 800px;
+}
+/* ----- FOOTER ------------------------ */
+footer{
+    height: 135px;
+    background-color: #23272A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ----- MOBILE ------------------------ */
+@media (max-width: 1000px){
+    header{
+        height: 510px;
+        background: url('/assets/img/Header\ Background-mobile.png');
+        background-size: cover;
+    }
+    header p{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        height: 130px;
+        width: 380px;
+    }
+    header h1{
+        font-size: 32px;
+        text-align: left;
+        width: 200px;
+    }
+    .title-mobile{
+        width: 380px;
+        height: 120px;
+    }
+    header .botoes{
+        width: 380px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    header #download,
+    header #open{
+        width: 380px;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+    .quarta h3{
+        font-size: 32px;
+        text-align: left;
+        width: 380px;
+    }
+    .primeira,
+    .segunda,
+    .terceira,
+    .quarta{
+        height: auto;
+    }
+    .primeira #img-section-um,
+    .segunda #img-section-dois,
+    .terceira #img-section-tres,
+    .quarta #img-section-quatro{
+        width: 90%;
+        height: auto;
+    }
+    .quarta p{
+        width: 380px;
+        text-align: left;
+    }
+}
